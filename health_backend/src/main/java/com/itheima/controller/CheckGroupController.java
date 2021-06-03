@@ -90,7 +90,6 @@ public class CheckGroupController {
         //编辑成功
         return new Result(true, MessageConstant.EDIT_CHECKGROUP_SUCCESS);
     }
-/*
     //查询所有
     @RequestMapping("/findAll")
     public Result findAll(){
@@ -100,5 +99,5 @@ public class CheckGroupController {
             result.setData(checkGroupList);
             return result;
         }
-        return new Result(false,MessageConstant.QUERY_CHECKGROUP_FAIL);}*/
+        return new Result(false,MessageConstant.QUERY_CHECKGROUP_FAIL);}
 }

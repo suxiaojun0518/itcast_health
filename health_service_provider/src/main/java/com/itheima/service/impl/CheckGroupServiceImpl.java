@@ -20,7 +20,7 @@ import java.util.Map;
  * 检查组服务
  * */
 @Service(interfaceClass =CheckGroupService.class)
-public class CheckGroupServiceImpl implements CheckGroupService {
+public class CheckGroupServiceImpl implements CheckGroupService{
     @Autowired
     private CheckGroupDao checkGroupDao;
 
@@ -78,4 +78,8 @@ public class CheckGroupServiceImpl implements CheckGroupService {
         checkGroupDao.edit(checkGroup);
     }
 
+    @Override
+    public List<CheckGroup> findAll() {
+        return checkGroupDao.findAll();
+    }
 }
