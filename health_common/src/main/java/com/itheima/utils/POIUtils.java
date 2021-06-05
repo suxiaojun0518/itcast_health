@@ -110,7 +110,7 @@ public class POIUtils {
         String dataFormatString = cell.getCellStyle().getDataFormatString();
         if(dataFormatString.equals("m/d/yy")){
             cellValue = new SimpleDateFormat(DATE_FORMAT).format(cell.getDateCellValue());
-            return cellValue;//"2019/10/10"
+            return cellValue;
         }
         //把数字当成String来读，避免出现1读成1.0的情况
         if(cell.getCellType() == Cell.CELL_TYPE_NUMERIC){
